@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>English Academy - Grammar & Tenses</title>
+    <title>English Academy - Destination A1</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -14,10 +14,10 @@
         
         h2 { color: #38bdf8; margin-bottom: 15px; text-align: center; }
         
-        .card { background: #1e293b; width: 100%; max-width: 360px; padding: 15px; border-radius: 14px; border: 1px solid #334155; margin-bottom: 12px; display: flex; flex-direction: column; gap: 6px; }
-        .card-title { font-size: 16px; font-weight: bold; color: #38bdf8; }
+        .card { background: #1e293b; width: 100%; max-width: 360px; padding: 14px; border-radius: 14px; border: 1px solid #334155; margin-bottom: 10px; display: flex; flex-direction: column; gap: 6px; }
+        .card-title { font-size: 15px; font-weight: bold; color: #38bdf8; }
         .card-desc { font-size: 13px; color: #94a3b8; line-height: 1.4; }
-        .formula { background: #0f172a; padding: 8px; border-radius: 8px; color: #34d399; font-family: monospace; font-size: 13px; margin-top: 4px; }
+        .formula { background: #0f172a; padding: 8px; border-radius: 8px; color: #34d399; font-family: monospace; font-size: 12px; margin-top: 4px; }
 
         .search-box { width: 100%; max-width: 360px; padding: 12px; border-radius: 12px; background: #1e293b; border: 1px solid #334155; color: #fff; font-size: 14px; margin-bottom: 15px; outline: none; }
         .search-box:focus { border-color: #38bdf8; }
@@ -33,40 +33,38 @@
         <h2>⏰ Ingliz tili Zamonlari</h2>
         <div class="list-container" style="width: 100%; max-width: 360px;">
             <div class="card">
-                <div class="card-title">1. Present Simple (Hozirgi oddiy)</div>
-                <div class="card-desc">Doimiy takrorlanadigan ish-harakatlar, odatlar uchun ishlatiladi.</div>
-                <div class="formula">(+): V / Vs (He/She/It) <br>(-): don't / doesn't + V <br>(?): Do / Does + S + V</div>
+                <div class="card-title">1. Present Simple</div>
+                <div class="card-desc">Odatlar va doimiy takrorlanadigan ishlar uchun.</div>
+                <div class="formula">(+): V / Vs<br>(-): don't / doesn't + V<br>(?): Do / Does + S + V</div>
             </div>
             <div class="card">
-                <div class="card-title">2. Present Continuous (Hozirgi davomiy)</div>
-                <div class="card-desc">Hozirgi paytda, gapirib turgan vaqtda sodir bo'layotgan harakatlar.</div>
-                <div class="formula">(+): am/is/are + V-ing</div>
+                <div class="card-title">2. Present Continuous</div>
+                <div class="card-desc">Hozirgi vaqtda sodir bo'layotgan jarayonlar.</div>
+                <div class="formula">(+): am/is/are + V-ing<br>(-): am/is/are + not + V-ing<br>(?): Am/Is/Are + S + V-ing</div>
             </div>
             <div class="card">
-                <div class="card-title">3. Past Simple (O'tgan oddiy)</div>
-                <div class="card-desc">O'tgan zamonda aniq bir vaqtda sodir bo'lgan ish-harakatlar.</div>
-                <div class="formula">(+): V2 / V-ed <br>(-): didn't + V <br>(?): Did + S + V</div>
+                <div class="card-title">3. Past Simple</div>
+                <div class="card-desc">O'tgan zamondagi tugallangan ish-harakatlar.</div>
+                <div class="formula">(+): V2 / V-ed<br>(-): didn't + V<br>(?): Did + S + V</div>
             </div>
             <div class="card">
-                <div class="card-title">4. Future Simple (Kelasi oddiy)</div>
-                <div class="card-desc">Kelajakda bajariladigan ish-harakatlar va rejalashtirilmagan qarorlar.</div>
-                <div class="formula">(+): will + V</div>
+                <div class="card-title">4. Future Simple</div>
+                <div class="card-desc">Kelajakda bajariladigan ish-harakatlar.</div>
+                <div class="formula">(+): will + V<br>(-): won't + V<br>(?): Will + S + V</div>
             </div>
         </div>
     </div>
 
     <div id="tab-verbs" class="tab-content">
-        <h2>⚡ Noto'g'ri Fe'llar</h2>
+        <h2>⚡ Noto'g'ri Fe'llar (3 ta shakl)</h2>
         <input type="text" id="verb-search" class="search-box" placeholder="Fe'lni qidirish..." oninput="filterVerbs()">
-        <div class="list-container" id="verbs-list" style="width: 100%; max-width: 360px; display: flex; flex-direction: column; gap: 10px;">
-            </div>
+        <div class="list-container" id="verbs-list" style="width: 100%; max-width: 360px; display: flex; flex-direction: column; gap: 8px;"></div>
     </div>
 
     <div id="tab-vocab" class="tab-content">
-        <h2>📖 Lug'at to'plami</h2>
+        <h2>📖 Destination A1 Lug'ati</h2>
         <input type="text" id="vocab-search" class="search-box" placeholder="So'zni qidirish..." oninput="filterVocab()">
-        <div class="list-container" id="vocab-list" style="width: 100%; max-width: 360px; display: flex; flex-direction: column; gap: 10px;">
-            </div>
+        <div class="list-container" id="vocab-list" style="width: 100%; max-width: 360px; display: flex; flex-direction: column; gap: 8px;"></div>
     </div>
 
     <div class="nav">
@@ -76,34 +74,370 @@
     </div>
 
     <script>
-        const irregularVerbs = [
+        const verbsData = [
             { v1: "Be", v2: "Was / Were", v3: "Been", uz: "Bo'lmoq" },
             { v1: "Begin", v2: "Began", v3: "Begun", uz: "Boshlamoq" },
             { v1: "Break", v2: "Broke", v3: "Broken", uz: "Sindirmoq" },
+            { v1: "Bring", v2: "Brought", v3: "Brought", uz: "Olib kelmoq" },
             { v1: "Buy", v2: "Bought", v3: "Bought", uz: "Sotib olmoq" },
+            { v1: "Catch", v2: "Caught", v3: "Caught", uz: "Tutib olmoq" },
+            { v1: "Choose", v2: "Chose", v3: "Chosen", uz: "Tanlamoq" },
             { v1: "Come", v2: "Came", v3: "Come", uz: "Kelmoq" },
+            { v1: "Cost", v2: "Cost", v3: "Cost", uz: "Turmoq (narxi)" },
+            { v1: "Cut", v2: "Cut", v3: "Cut", uz: "Kesmoq" },
             { v1: "Do", v2: "Did", v3: "Done", uz: "Bajarmoq" },
+            { v1: "Draw", v2: "Drew", v3: "Drawn", uz: "Chizmoq" },
+            { v1: "Drink", v2: "Drank", v3: "Drunk", uz: "Ichmoq" },
+            { v1: "Drive", v2: "Drove", v3: "Driven", uz: "Haydamoq" },
             { v1: "Eat", v2: "Ate", v3: "Eaten", uz: "Yemoq" },
+            { v1: "Fall", v2: "Fell", v3: "Fallen", uz: "Yiqilmoq" },
             { v1: "Find", v2: "Found", v3: "Found", uz: "Topmoq" },
+            { v1: "Fly", v2: "Flew", v3: "Flown", uz: "Uchmoq" },
+            { v1: "Get", v2: "Got", v3: "Got / Gotten", uz: "Olmoq" },
+            { v1: "Give", v2: "Gave", v3: "Given", uz: "Bermoq" },
             { v1: "Go", v2: "Went", v3: "Gone", uz: "Bormoq" },
             { v1: "Have", v2: "Had", v3: "Had", uz: "Ega bo'lmoq" },
+            { v1: "Hit", v2: "Hit", v3: "Hit", uz: "Urmoq" },
+            { v1: "Know", v2: "Knew", v3: "Known", uz: "Bilmoq" },
+            { v1: "Leave", v2: "Left", v3: "Left", uz: "Tark etmoq" },
+            { v1: "Let", v2: "Let", v3: "Let", uz: "Ruxsat bermoq" },
             { v1: "Make", v2: "Made", v3: "Made", uz: "Yasamoq" },
+            { v1: "Put", v2: "Put", v3: "Put", uz: "Qo'ymoq" },
+            { v1: "Read", v2: "Read", v3: "Read", uz: "O'qimoq" },
+            { v1: "Run", v2: "Ran", v3: "Run", uz: "Yugurmoq" },
+            { v1: "Say", v2: "Said", v3: "Said", uz: "Demoq" },
             { v1: "See", v2: "Saw", v3: "Seen", uz: "Ko'rmoq" },
+            { v1: "Sing", v2: "Sang", v3: "Sung", uz: "Kuylamoq" },
+            { v1: "Sit", v2: "Sat", v3: "Sat", uz: "O'tirmoq" },
+            { v1: "Sleep", v2: "Slept", v3: "Slept", uz: "Uxlamoq" },
+            { v1: "Speak", v2: "Spoke", v3: "Spoken", uz: "Gapirmoq" },
+            { v1: "Swim", v2: "Swam", v3: "Swum", uz: "Suzmoq" },
+            { v1: "Take", v2: "Took", v3: "Taken", uz: "Olmoq" },
             { v1: "Write", v2: "Wrote", v3: "Written", uz: "Yozmoq" }
         ];
 
-        const vocabulary = [
-            { en: "Ability", uz: "Qobiliyat" },
-            { en: "Acknowledge", uz: "Tan olmoq" },
-            { en: "Benefit", uz: "Foyda" },
-            { en: "Curious", uz: "Qiziquvchan" },
-            { en: "Determine", uz: "Aniqlamoq" },
-            { en: "Efficient", uz: "Samarali" },
-            { en: "Improve", uz: "Yaxshilamoq" },
-            { en: "Knowledge", uz: "Bilim" },
-            { en: "Opportunity", uz: "Imkoniyat" },
-            { en: "Success", uz: "Muvaffaqiyat" }
-        ];
+        const vocabData = [
+            { en: "Actor", uz: "Aktyor" },
+            { en: "Address", uz: "Manzil" },
+            { en: "Age", uz: "Yosh" },
+            { en: "Airport", uz: "Aeroport" },
+            { en: "Always", uz: "Doimo" },
+            { en: "Animal", uz: "Hayvon" },
+            { en: "Apple", uz: "Olma" },
+            { en: "Ask", uz: "So'ramoq" },
+            { en: "Autumn", uz: "Kuz" },
+            { en: "Baby", uz: "Chaqaloq" },
+            { en: "Bad", uz: "Yomon" },
+            { en: "Bag", uz: "Sumka" },
+            { en: "Banana", uz: "Banan" },
+            { en: "Bank", uz: "Bank" },
+            { en: "Beach", uz: "Plyaj" },
+            { en: "Beautiful", uz: "Go'zal" },
+            { en: "Bed", uz: "Krovat" },
+            { en: "Bedroom", uz: "Yotoqxona" },
+            { en: "Big", uz: "Katta" },
+            { en: "Bird", uz: "Qush" },
+            { en: "Birthday", uz: "Tug'ilgan kun" },
+            { en: "Black", uz: "Qora" },
+            { en: "Blue", uz: "Ko'k" },
+            { en: "Book", uz: "Kitob" },
+            { en: "Bread", uz: "Non" },
+            { en: "Brother", uz: "Aka / Uka" },
+            { en: "Bus", uz: "Avtobus" },
+            { en: "Camera", uz: "Kamera" },
+            { en: "Car", uz: "Mashina" },
+            { en: "Cat", uz: "Mushuk" },
+            { en: "Chair", uz: "Stul" },
+            { en: "Cheese", uz: "Pishloq" },
+            { en: "Child", uz: "Bola" },
+            { en: "City", uz: "Shahar" },
+            { en: "Class", uz: "Sinf" },
+            { en: "Clothes", uz: "Kiyimlar" },
+            { en: "Coffee", uz: "Kofe" },
+            { en: "Color", uz: "Rang" },
+            { en: "Computer", uz: "Kompyuter" },
+            { en: "Country", uz: "Mamlakat" },
+            { en: "Cousin", uz: "Amakivachcha" },
+            { en: "Cup", uz: "Chashka" },
+            { en: "Date", uz: "Sana" },
+            { en: "Daughter", uz: "Qiz farzand" },
+            { en: "Day", uz: "Kun" },
+            { en: "Desk", uz: "Parta" },
+            { en: "Dictionary", uz: "Lug'at" },
+            { en: "Dinner", uz: "Kechki ovqat" },
+            { en: "Doctor", uz: "Shifokor" },
+            { en: "Dog", uz: "It" },
+            { en: "Door", uz: "Eshik" },
+            { en: "Drink", uz: "Ichimlik" },
+            { en: "Driver", uz: "Haydovchi" },
+            { en: "Early", uz: "Erta" },
+            { en: "Easy", uz: "Oson" },
+            { en: "Egg", uz: "Tuxum" },
+            { en: "Email", uz: "Pochta" },
+            { en: "Evening", uz: "Kechqurun" },
+            { en: "Family", uz: "Oila" },
+            { en: "Father", uz: "Ota" },
+            { en: "Favorite", uz: "Sevimli" },
+            { en: "Film", uz: "Kino" },
+            { en: "Fish", uz: "Baliq" },
+            { en: "Flower", uz: "Gul" },
+            { en: "Food", uz: "Ovqat" },
+            { en: "Foot", uz: "Oyoq" },
+            { en: "Football", uz: "Futbol" },
+            { en: "Friend", uz: "Do'st" },
+            { en: "Fruit", uz: "Meva" },
+            { en: "Game", uz: "O'yin" },
+            { en: "Garden", uz: "Bog'" },
+            { en: "Girl", uz: "Qiz bola" },
+            { en: "Good", uz: "Yaxshi" },
+            { en: "Grandfather", uz: "Bobo" },
+            { en: "Grandmother", uz: "Buvi" },
+            { en: "Green", uz: "Yashil" },
+            { en: "Hair", uz: "Soch" },
+            { en: "Hand", uz: "Qo'l" },
+            { en: "Happy", uz: "Baxtli" },
+            { en: "Hat", uz: "Bosh kiyim" },
+            { en: "Head", uz: "Bosh" },
+            { en: "Help", uz: "Yordam" },
+            { en: "Home", uz: "Uy" },
+            { en: "Hospital", uz: "Kasalxona" },
+            { en: "Hotel", uz: "Mehmonxona" },
+            { en: "Hour", uz: "Soat" },
+            { en: "House", uz: "Hovli" },
+            { en: "Idea", uz: "G'oya" },
+            { en: "Important", uz: "Muhim" },
+            { en: "Information", uz: "Ma'lumot" },
+            { en: "Job", uz: "Ish" },
+            { en: "Key", uz: "Kalit" },
+            { en: "Kitchen", uz: "Oshxona" },
+            { en: "Language", uz: "Til" },
+            { en: "Large", uz: "Katta" },
+            { en: "Last", uz: "Oxirgi" },
+            { en: "Late", uz: "Kech" },
+            { en: "Left", uz: "Chap" },
+            { en: "Letter", uz: "Xat" },
+            { en: "Library", uz: "Kutubxona" },
+            { en: "Life", uz: "Hayot" },
+            { en: "Light", uz: "Yorug'lik" },
+            { en: "Line", uz: "Chiziq" },
+            { en: "Little", uz: "Kichkina" },
+            { en: "Long", uz: "Uzun" },
+            { en: "Look", uz: "Qaramoq" },
+            { en: "Lunch", uz: "Tushlik" },
+            { en: "Magazine", uz: "Jurnal" },
+            { en: "Man", uz: "Erkak" },
+            { en: "Map", uz: "Xarita" },
+            { en: "Market", uz: "Bozor" },
+            { en: "Meat", uz: "Go'sht" },
+            { en: "Medicine", uz: "Dori" },
+            { en: "Message", uz: "Xabar" },
+            { en: "Milk", uz: "Sut" },
+            { en: "Minute", uz: "Daqiqa" },
+            { en: "Monday", uz: "Dushanba" },
+            { en: "Money", uz: "Pul" },
+            { en: "Month", uz: "Oy" },
+            { en: "Morning", uz: "Ertalab" },
+            { en: "Mother", uz: "Ona" },
+            { en: "Mountain", uz: "Tog'" },
+            { en: "Movie", uz: "Kino" },
+            { en: "Music", uz: "Musiqa" },
+            { en: "Name", uz: "Ism" },
+            { en: "Near", uz: "Yaqin" },
+            { en: "Need", uz: "Muhtoj bo'lmoq" },
+            { en: "New", uz: "Yangi" },
+            { en: "News", uz: "Yangiliklar" },
+            { en: "Next", uz: "Keyingi" },
+            { en: "Night", uz: "Tun" },
+            { en: "North", uz: "Shimol" },
+            { en: "Nose", uz: "Burun" },
+            { en: "Number", uz: "Raqam" },
+            { en: "Office", uz: "Ofis" },
+            { en: "Old", uz: "Qari / Eski" },
+            { en: "Open", uz: "Ochiq" },
+            { en: "Orange", uz: "Apelsin" },
+            { en: "Page", uz: "Sahifa" },
+            { en: "Paper", uz: "Qog'oz" },
+            { en: "Park", uz: "Bog'" },
+            { en: "Party", uz: "Ziyofat" },
+            { en: "Pay", uz: "To'lamoq" },
+            { en: "Pen", uz: "Ruchka" },
+            { en: "Pencil", uz: "Qalam" },
+            { en: "People", uz: "Odamlar" },
+            { en: "Phone", uz: "Telefon" },
+            { en: "Photo", uz: "Surat" },
+            { en: "Picture", uz: "Rasm" },
+            { en: "Place", uz: "Joy" },
+            { en: "Plane", uz: "Samolyot" },
+            { en: "Play", uz: "O'ynamoq" },
+            { en: "Police", uz: "Politsiya" },
+            { en: "Pool", uz: "Basseyn" },
+            { en: "Price", uz: "Narx" },
+            { en: "Problem", uz: "Muammo" },
+            { en: "Question", uz: "Savol" },
+            { en: "Quick", uz: "Tez" },
+            { en: "Quiet", uz: "Tinch" },
+            { en: "Radio", uz: "Radio" },
+            { en: "Rain", uz: "Yomg'ir" },
+            { en: "Read", uz: "O'qimoq" },
+            { en: "Ready", uz: "Tayyor" },
+            { en: "Red", uz: "Qizil" },
+            { en: "Remember", uz: "Eslab qolmoq" },
+            { en: "Right", uz: "O'ng / To'g'ri" },
+            { en: "River", uz: "Daryo" },
+            { en: "Road", uz: "Yo'l" },
+            { en: "Room", uz: "Xona" },
+            { en: "Rule", uz: "Qoida" },
+            { en: "Run", uz: "Yugurmoq" },
+            { en: "Sad", uz: "Xafa" },
+            { en: "Safe", uz: "Xavfsiz" },
+            { en: "Salt", uz: "Tuz" },
+            { en: "School", uz: "Maktab" },
+            { en: "Sea", uz: "Dengiz" },
+            { en: "Season", uz: "Fasl" },
+            { en: "See", uz: "Ko'rmoq" },
+            { en: "Sell", uz: "Sotmoq" },
+            { en: "Send", uz: "Yubormoq" },
+            { en: "Shirt", uz: "Ko'ylak" },
+            { en: "Shoe", uz: "Oyoq kiyim" },
+            { en: "Shop", uz: "Do'kon" },
+            { en: "Short", uz: "Qisqa" },
+            { en: "Show", uz: "Ko'rsatmoq" },
+            { en: "Sick", uz: "Kasal" },
+            { en: "Sister", uz: "Opa / Singil" },
+            { en: "Sit", uz: "O'tirmoq" },
+            { en: "Size", uz: "O'lcham" },
+            { en: "Sky", uz: "Osmon" },
+            { en: "Sleep", uz: "Uxlamoq" },
+            { en: "Slow", uz: "Sekin" },
+            { en: "Small", uz: "Kichik" },
+            { en: "Snow", uz: "Qor" },
+            { en: "Sock", uz: "Paypoq" },
+            { en: "Son", uz: "O'g'il" },
+            { en: "Song", uz: "Qo'shiq" },
+            { en: "Soup", uz: "Sho'rva" },
+            { en: "South", uz: "Janub" },
+            { en: "Speak", uz: "Gapirmoq" },
+            { en: "Sport", uz: "Sport" },
+            { en: "Spring", uz: "Bahor" },
+            { en: "Stand", uz: "Turmoq" },
+            { en: "Star", uz: "Yulduz" },
+            { en: "Start", uz: "Boshlamoq" },
+            { en: "Station", uz: "Stansiya" },
+            { en: "Stay", uz: "Qolmoq" },
+            { en: "Stop", uz: "To'xtamoq" },
+            { en: "Store", uz: "Do'kon" },
+            { en: "Story", uz: "Hikoya" },
+            { en: "Street", uz: "Ko'cha" },
+            { en: "Strong", uz: "Kuchli" },
+            { en: "Student", uz: "Talaba" },
+            { en: "Study", uz: "O'qimoq" },
+            { en: "Sugar", uz: "Shakar" },
+            { en: "Summer", uz: "Yoz" },
+            { en: "Sun", uz: "Quyosh" },
+            { en: "Sunday", uz: "Yakshanba" },
+            { en: "Supermarket", uz: "Supermarket" },
+            { en: "Sweet", uz: "Shirin" },
+            { en: "Swim", uz: "Suzmoq" },
+            { en: "Table", uz: "Stol" },
+            { en: "Take", uz: "Olmoq" },
+            { en: "Talk", uz: "Suhbatlashmoq" },
+            { en: "Tall", uz: "Baland" },
+            { en: "Tea", uz: "Choy" },
+            { en: "Teach", uz: "O'qitmoq" },
+            { en: "Teacher", uz: "O'qituvchi" },
+            { en: "Team", uz: "Jamoa" },
+            { en: "Telephone", uz: "Telefon" },
+            { en: "Television", uz: "Televizor" },
+            { en: "Tell", uz: "Aytmoq" },
+            { en: "Tennis", uz: "Tennis" },
+            { en: "Test", uz: "Test" },
+            { en: "Text", uz: "Matn" },
+            { en: "Theater", uz: "Teatr" },
+            { en: "Then", uz: "Keyin" },
+            { en: "There", uz: "U yerda" },
+            { en: "Thing", uz: "Narsa" },
+            { en: "Think", uz: "O'ylamoq" },
+            { en: "This", uz: "Bu" },
+            { en: "Thousand", uz: "Ming" },
+            { en: "Three", uz: "Uch" },
+            { en: "Ticket", uz: "Chipta" },
+            { en: "Time", uz: "Vaqt" },
+            { en: "Tired", uz: "Charchagan" },
+            { en: "Today", uz: "Bugun" },
+            { en: "Together", uz: "Birga" },
+            { en: "Toilet", uz: "Hojatxona" },
+            { en: "Tomato", uz: "Pomidor" },
+            { en: "Tomorrow", uz: "Ertaga" },
+            { en: "Tonight", uz: "Bugun kechqurun" },
+            { en: "Tooth", uz: "Tish" },
+            { en: "Town", uz: "Shaharcha" },
+            { en: "Train", uz: "Poyezd" },
+            { en: "Travel", uz: "Sayohat" },
+            { en: "Tree", uz: "Daraxt" },
+            { en: "Trip", uz: "Sayohat" },
+            { en: "True", uz: "Haqiqiy" },
+            { en: "Try", uz: "Harakat qilmoq" },
+            { en: "Tuesday", uz: "Seshanba" },
+            { en: "Turn", uz: "Burilmoq" },
+            { en: "TV", uz: "Televizor" },
+            { en: "Uncle", uz: "Amaki" },
+            { en: "Under", uz: "Ostida" },
+            { en: "Understand", uz: "Tushunmoq" },
+            { en: "University", uz: "Universitet" },
+            { en: "Up", uz: "Yuqoriga" },
+            { en: "Use", uz: "Foydalanmoq" },
+            { en: "Vacation", uz: "Ta'til" },
+            { en: "Vegetable", uz: "Sabzavot" },
+            { en: "Very", uz: "Juda" },
+            { en: "Video", uz: "Video" },
+            { en: "Village", uz: "Qishloq" },
+            { en: "Visit", uz: "Tashrif buyurmoq" },
+            { en: "Voice", uz: "Ovoz" },
+            { en: "Wait", uz: "Kutmoq" },
+            { en: "Walk", uz: "Piyoda yurmoq" },
+            { en: "Wall", uz: "Devor" },
+            { en: "Want", uz: "Xohlamoq" },
+            { en: "Warm", uz: "Iliq" },
+            { en: "Wash", uz: "Yuvmoq" },
+            { en: "Watch", uz: "Tomosha qilmoq" },
+            { en: "Water", uz: "Suv" },
+            { en: "Way", uz: "Yo'l" },
+            { en: "Weather", uz: "Ob-havo" },
+            { en: "Week", uz: "Hafta" },
+            { en: "Weekend", uz: "Dam olish kuni" },
+            { en: "Welcome", uz: "Xush kelibsiz" },
+            { en: "West", uz: "G'arb" },
+            { en: "What", uz: "Nima" },
+            { en: "When", uz: "Qachon" },            { en: "White", uz: "Oq" },
+            { en: "Who", uz: "Kim" },
+            { en: "Why", uz: "Nima uchun" },
+            { en: "Wide", uz: "Keng" },
+            { en: "Wife", uz: "Xotin" },
+            { en: "Wild", uz: "Yovvoyi" },
+            { en: "Will", uz: "-ajak (Kelajak zamon)" },
+            { en: "Win", uz: "Yutmoq" },
+            { en: "Wind", uz: "Shamol" },
+            { en: "Window", uz: "Deraza" },
+            { en: "Winter", uz: "Qish" },
+            { en: "Wish", uz: "Tilak / Xohlamoq" },
+            { en: "With", uz: "Bilan" },
+            { en: "Woman", uz: "Ayol" },
+            { en: "Word", uz: "So'z" },
+            { en: "Work", uz: "Ishlamoq" },
+            { en: "Worker", uz: "Ishchi" },
+            { en: "World", uz: "Dunyo" },
+            { en: "Worry", uz: "Xavotirlanmoq" },
+            { en: "Write", uz: "Yozmoq" },
+            { en: "Wrong", uz: "Noto'g'ri" },
+            { en: "Year", uz: "Yil" },
+            { en: "Yellow", uz: "Sariq" },
+            { en: "Yes", uz: "Ha" },
+            { en: "Yesterday", uz: "Kecha" },
+            { en: "You", uz: "Siz / Sen" },
+            { en: "Young", uz: "Yosh" },
+            { en: "Zero", uz: "Nol" },
+            { en: "Zoo", uz: "Zopark" }
+            ];
 
         function renderVerbs(list) {
             const container = document.getElementById('verbs-list');
@@ -111,7 +445,7 @@
             list.forEach(item => {
                 container.innerHTML += `
                     <div class="card">
-                        <div class="card-title">${item.v1} - ${item.v2} - ${item.v3}</div>
+                        <div class="card-title">${item.v1} — ${item.v2} — ${item.v3}</div>
                         <div class="card-desc">Tarjimasi: <b>${item.uz}</b></div>
                     </div>
                 `;
@@ -120,7 +454,7 @@
 
         function filterVerbs() {
             let query = document.getElementById('verb-search').value.toLowerCase();
-            let filtered = irregularVerbs.filter(v => v.v1.toLowerCase().includes(query) || v.uz.toLowerCase().includes(query));
+            let filtered = verbsData.filter(v => v.v1.toLowerCase().includes(query) || v.uz.toLowerCase().includes(query));
             renderVerbs(filtered);
         }
 
@@ -139,7 +473,7 @@
 
         function filterVocab() {
             let query = document.getElementById('vocab-search').value.toLowerCase();
-            let filtered = vocabulary.filter(v => v.en.toLowerCase().includes(query) || v.uz.toLowerCase().includes(query));
+            let filtered = vocabData.filter(v => v.en.toLowerCase().includes(query) || v.uz.toLowerCase().includes(query));
             renderVocab(filtered);
         }
 
@@ -150,8 +484,8 @@
             if (typeof btn === 'object') btn.classList.add('active');
         }
 
-        renderVerbs(irregularVerbs);
-        renderVocab(vocabulary);
+        renderVerbs(verbsData);
+        renderVocab(vocabData);
     </script>
 </body>
 </html>
